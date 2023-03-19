@@ -49,6 +49,6 @@ def get_pop_pack():
     choice = random.randint(0, len(pop_packs) - 1)
     return pop_packs[choice]
 
-print(get_pop_pack())
+# print(get_pop_pack())
 # pop_names = 
 # print(product_list)
