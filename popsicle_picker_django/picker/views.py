@@ -4,8 +4,7 @@ from django.template import loader
 
 # Create your views here.
 def picker(request):
-    template = loader.get_template('/templates/picker/main.html')
-    return render(request, template)
+    return render(request, 'picker/main.html')
 
 def result(request, result):
     return render()
