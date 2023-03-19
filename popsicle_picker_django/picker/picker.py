@@ -39,9 +39,12 @@ for product in product_list:
 # find all img tags that have a data-src attribute (because attribute is mostly productList specific)
 image_elements = soup.find_all('img', {'data-src': True})
 # get a list of data-src attribute values alone and remove the first one because that is the header img
-images = [element['data-src'] for element in image_elements][1:]
+images = [element['data-src'] for element in image_elements][1::2]
+# last image is for the random pop, so remove it
+images.pop()
 # pack the images and pop_list lists together to be grabbed by the view. the indices should line up
-pop_packs = list(zip(images, pop_list))
+pop_packs = [{'image': images[i], 'name': pop_list[i]} for i in range(len(pop_list) - 1)]
+# zip(images, pop_list)
 
 
 

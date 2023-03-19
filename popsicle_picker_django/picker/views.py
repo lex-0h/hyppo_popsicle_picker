@@ -6,5 +6,6 @@ from django.template import loader
 def picker(request):
     return render(request, 'picker/main.html')
 
-def result(request, result):
-    return render()
+def result(request):
+    pop = get_pop_pack()
+    return render(request, 'picker/result.html', pop)

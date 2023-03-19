@@ -3,10 +3,12 @@
 {% block title %}Popsicle Picker{% endblock %}
 
 {% block content %}
-<header>
-    <h1>Popsicle Picker</h1>
-</header>
-<main>
-    <button>Pick my flavor</button>
-</main>
+    <header>
+        <h1>Popsicle Picker</h1>
+    </header>
+    <main>
+        <button type="button">
+            <a href="{% url 'result' %}">Pick my flavor</a>
+        </button>
+    </main>
 {% endblock %}
