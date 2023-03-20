@@ -4,11 +4,13 @@
 
 {% block content %}
     <header>
-        <h1>Popsicle Picker</h1>
+        <h1>The Hyppo Popsicle Picker</h1>
     </header>
+    {% block button %}
     <main>
         <button type="button">
             <a href="{% url 'result' %}">Pick my flavor</a>
         </button>
     </main>
+    {% endblock button %}
 {% endblock %}

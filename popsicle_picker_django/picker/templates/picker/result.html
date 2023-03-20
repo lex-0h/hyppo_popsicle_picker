@@ -1,11 +1,14 @@
 {% extends 'picker/main.html' %}
 
-{% block content %}
-    {{ block.super }}
+{% block button %}
+    <!-- {{ block.super }} -->
     <main>
+        <button type="button">
+            <a href="{% url 'result' %}">Pick a new one</a>
+        </button>
         <img src="{{ image }}"/>
         {{ name }}
     </main>
     
-{% endblock content %}
+{% endblock button %}
 
