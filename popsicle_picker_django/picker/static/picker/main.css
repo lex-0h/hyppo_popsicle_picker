@@ -75,3 +75,43 @@ select {
   }
 }
 /* --------------- end reset --------------- end reset --------------- end reset -------------- end reset */
+/* color palette:  #F4A261 Sandy Brown, #FFC154 Orange, #B2D8D8 Light Blue, #264653 Charcoal, #F78FB3 Pink url='https://coolors.co/f4a261-ffc154-b2d8d8-264653-f78fb3' */
+* {
+    background-color: #F4A261;
+}
+
+header {
+    color: #264653;
+    text-align: center;
+    margin-top: .5em;
+    font-family: 'Shantell Sans', cursive;
+    font-size: 2.75em;
+}
+
+main {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    max-width: 30em;
+    font-family: 'DM Mono', monospace;
+    border-radius: 1.5em;
+    padding: .8em;
+    margin-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #802392;
+    border-color: #802392;
+
+}
+
+img {
+    max-height: 35%;
+    max-width: 25%;
+    border-radius: 1em;
+}
