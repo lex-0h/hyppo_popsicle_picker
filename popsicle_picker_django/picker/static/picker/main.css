@@ -45,11 +45,11 @@ a:not([class]) {
 }
 
 /* Make images easier to work with */
-img,
+/* img,
 picture {
   max-width: 100%;
   display: block;
-}
+} */
 
 /* Inherit fonts for inputs and buttons */
 input,
@@ -110,8 +110,21 @@ a {
 
 }
 
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Handlee, 'sans serif';
+}
+
 img {
     max-height: 35%;
     max-width: 25%;
     border-radius: 1em;
+    /* justify-content: center; */
+}
+
+caption {
+    font-family: Handlee, 'sans serif';
 }

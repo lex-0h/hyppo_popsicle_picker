@@ -1,14 +1,15 @@
 {% extends 'picker/main.html' %}
 
-{% block button %}
+{% block main %}
     <!-- {{ block.super }} -->
     <main>
         <button type="button">
-            <a href="{% url 'result' %}">Pick a new one</a>
+            <a href="{% url 'result' %}">Pick a new pop</a>
         </button>
-        <img src="{{ image }}"/>
-        {{ name }}
+        <figure>
+            <img src="{{ image }}"/>
+            <caption>{{ name }}</caption>
+        </figure>
     </main>
-    
-{% endblock button %}
+{% endblock main %}
 
