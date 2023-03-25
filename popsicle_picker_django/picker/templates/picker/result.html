@@ -10,6 +10,11 @@
             <img src="{{ image }}"/>
             <caption>{{ name }}</caption>
         </figure>
+        {% if alt_text == '' %}
+            <p>This image needs alt text! Want to help out?</p>
+            <p>Here's an example: "A brown popsicle on a bed of red and green candycane pieces and dark chocolate surrounded by fresh mint"</p>
+            <!-- <form action=""></form> -->
+        {% endif %}
     </main>
 {% endblock main %}
 

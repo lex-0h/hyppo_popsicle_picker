@@ -74,8 +74,8 @@ select {
     scroll-behavior: auto !important;
   }
 }
-/* --------------- end reset --------------- end reset --------------- end reset -------------- end reset */
-/* color palette:  #F4A261 Sandy Brown, #FFC154 Orange, #B2D8D8 Light Blue, #264653 Charcoal, #F78FB3 Pink url='https://coolors.co/f4a261-ffc154-b2d8d8-264653-f78fb3' */
+/* --------------- end reset --------------- end reset --------------- end reset -------------- end reset --------------- */
+/* color palette:  #F4A261 Sandy Brown, #FFC154 Orange, #B2D8D8 Light Blue, #264653 Charcoal, #F78FB3 Pink - url='https://coolors.co/f4a261-ffc154-b2d8d8-264653-f78fb3' */
 * {
     background-color: #F4A261;
 }
@@ -107,7 +107,6 @@ a {
     text-decoration: none;
     color: #802392;
     border-color: #802392;
-
 }
 
 figure {

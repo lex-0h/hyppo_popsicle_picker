@@ -1,6 +1,6 @@
 {% extends 'picker/base.html' %}
 
-{% block title %}Popsicle Picker{% endblock %}
+{% block title %}Popsicle Picker{% endblock title %}
 
 {% block content %}
     <header>
@@ -8,9 +8,9 @@
     </header>
     {% block main %}
     <main>
-        <button type="button">
+        <button>
             <a href="{% url 'result' %}">Pick my pop</a>
         </button>
     </main>
     {% endblock main %}
-{% endblock %}
+{% endblock content %}
