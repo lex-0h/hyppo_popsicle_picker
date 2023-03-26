@@ -10,9 +10,15 @@ class Pop(models.Model):
     # figure out how to check if dairy
     # dairy = models.BooleanField
 
+    def __str__(self):
+        return self.name
+
 
 class User(models.Model):
     username = models.CharField(max_length=15)
     dairy_free = models.BooleanField()
     incl_choc_cover = models.BooleanField()
     email = models.EmailField()
+
+    def __str__(self):
+        return self.username
