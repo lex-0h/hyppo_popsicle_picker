@@ -6,7 +6,6 @@ def picker(request):
     return render(request, 'picker/main.html')
 
 def result(request):
-    pop = dict(Pop.objects.order_by("?").first())
-    # for testing:
-    # pop = {'image': '/static/picker/test_image.jpg', 'name': 'Toasted Buckeye: 3-tiered', 'image_alt': ''}
-    return render(request, 'picker/result.html', pop)
+    pop = Pop.objects.order_by("?").first()
+    context = {'name': pop.name, 'image': pop.image}
+    return render(request, 'picker/result.html', context)

@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
-from models import Pop
+from picker.models import Pop
 
 page = urlopen('https://www.thehyppo.com/pop-delivery?category=All+Flavors')
 html = page.read().decode('utf-8')
