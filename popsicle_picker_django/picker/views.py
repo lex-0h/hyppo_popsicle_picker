@@ -1,13 +1,12 @@
-from picker.picker import get_pop_pack
 from django.shortcuts import render
-from django.template import loader
+from picker.models import Pop
 
 
 def picker(request):
     return render(request, 'picker/main.html')
 
 def result(request):
-    # pop = get_pop_pack()
+    pop = dict(Pop.objects.order_by("?").first())
     # for testing:
-    pop = {'image': '/static/picker/test_image.jpg', 'name': 'Toasted Buckeye: 3-tiered', 'image_alt': ''}
+    # pop = {'image': '/static/picker/test_image.jpg', 'name': 'Toasted Buckeye: 3-tiered', 'image_alt': ''}
     return render(request, 'picker/result.html', pop)

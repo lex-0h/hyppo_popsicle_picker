@@ -16,8 +16,8 @@ class Pop(models.Model):
 
 class User(models.Model):
     username = models.CharField(max_length=15)
-    dairy_free = models.BooleanField()
-    incl_choc_cover = models.BooleanField()
+    dairy_free = models.BooleanField(default=False)
+    incl_choc_cover = models.BooleanField(default=True)
     email = models.EmailField()
 
     def __str__(self):
