@@ -2,3 +2,4 @@ env
 db.sqlite3
 **/__pycache__
 notes.txt
+popsicle_picker_django/popsicle_picker_django/settings.py

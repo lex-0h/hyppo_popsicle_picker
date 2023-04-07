@@ -22,6 +22,5 @@ images = [element['data-src'] for element in image_elements][1::2]
 images.pop()
 # pack the images and pop_list lists together to be grabbed by the view. the indices should line up
 pop_packs = [{'image': images[i], 'name': pop_list[i]} for i in range(len(pop_list) - 1)]
-# zip(images, pop_list)
 
 Pop.objects.bulk_create([Pop(**pop) for pop in pop_packs])
